@@ -3,7 +3,6 @@
 
 int digitsum(int number)
 {
-    // 123 -> 1+ 2+ 3 
 int sum=0;
 
 while(number>0)
