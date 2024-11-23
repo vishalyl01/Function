@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+
+int digitsum(int number)
+{
+    // 123 -> 1+ 2+ 3 
+int sum=0;
+
+while(number>0)
+{
+    int val=number%10;   // 123 % 10 =3 
+    sum+=val;
+    number=number/10;  // 123 -> 123/10=12
+}
+    
+    
+    return sum;
+}
+
+
+
+int main() {
+	
+	int num;
+	scanf("%d",&num);
+	
+	int result=digitsum(num);
+	
+	printf("Sum of digits of %d is %d",num,result);
+	
+	
+	return 0;
+
+}
+
